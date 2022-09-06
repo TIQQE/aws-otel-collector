@@ -20,6 +20,7 @@ import (
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsxrayexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusremotewriteexporter"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/oidcauthextension"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/sigv4authextension"
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/exporter/loggingexporter"
@@ -39,6 +40,7 @@ func Components() (
 
 	extensions, err := component.MakeExtensionFactoryMap(
 		sigv4authextension.NewFactory(),
+		oidcauthextension.NewFactory(),
 	)
 	if err != nil {
 		errs = multierr.Append(errs, err)
@@ -66,8 +68,8 @@ func Components() (
 
 	factories := component.Factories{
 		Extensions: extensions,
-		Receivers: receivers,
-		Exporters: exporters,
+		Receivers:  receivers,
+		Exporters:  exporters,
 	}
 
 	return factories, errs
