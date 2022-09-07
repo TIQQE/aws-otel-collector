@@ -29,6 +29,7 @@ import (
 	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/awsproxy"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckextension"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/ecsobserver"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/oidcauthextension"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/pprofextension"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/sigv4authextension"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/attributesprocessor"
@@ -72,6 +73,7 @@ func Components() (component.Factories, error) {
 		sigv4authextension.NewFactory(),
 		zpagesextension.NewFactory(),
 		ballastextension.NewFactory(),
+		oidcauthextension.NewFactory(),
 	)
 
 	if err != nil {
