@@ -791,6 +791,8 @@ github.com/open-telemetry/opentelemetry-collector-contrib/extension/awsproxy v0.
 github.com/open-telemetry/opentelemetry-collector-contrib/extension/awsproxy v0.58.0/go.mod h1:jpyXnVfC5sjiNv23ouPdonhZjQuLb+XJ3ZtMJvthW44=
 github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckextension v0.58.0 h1:QaJ7VAVvEYD6SUZkq9DRq4ratHqhtYtFCDEEPJqu8Ho=
 github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckextension v0.58.0/go.mod h1:7+q6w5WKnw4KR+iy6MpAY2tn+VcJ74qVBCTdZ1lAE/A=
+github.com/open-telemetry/opentelemetry-collector-contrib/extension/oauth2clientauthextension v0.58.0 h1:rshjNGtPdUXoKmdXj2RMdPLZgOl5EbMnIoHJY5ESKHw=
+github.com/open-telemetry/opentelemetry-collector-contrib/extension/oauth2clientauthextension v0.58.0/go.mod h1:jRUx1WWmfw2UH1D0BhkFYgeafmv9UYnm5pNMiRh0Hlo=
 github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/ecsobserver v0.58.0 h1:g9FQ7jBcX49orCa21KsE2h+pIdtBLT542Ho6Bh+3ljQ=
 github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/ecsobserver v0.58.0/go.mod h1:kywayLpIV1fQygur7REui/xngI9Me+Jmha1Arf7P/FA=
 github.com/open-telemetry/opentelemetry-collector-contrib/extension/oidcauthextension v0.58.0 h1:DJ6KHHv4C3KhN5WD3c/9SsWJSoANXxZasb3XH/3Fqww=
