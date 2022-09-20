@@ -14,6 +14,7 @@ require (
 )
 
 require (
+	github.com/TIQQE/opentelemetry-collector-contrib/extension/oidcauthextension v0.0.0-20220920095720-0cc90b5594e4 // indirect
 	github.com/aws/aws-sdk-go v1.44.72 // indirect
 	github.com/aws/aws-sdk-go-v2 v1.9.2 // indirect
 	github.com/aws/aws-sdk-go-v2/config v1.8.3 // indirect

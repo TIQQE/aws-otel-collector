@@ -131,6 +131,8 @@ github.com/Shopify/toxiproxy/v2 v2.1.6-0.20210914104332-15ea381dcdae/go.mod h1:/
 github.com/Showmax/go-fqdn v1.0.0 h1:0rG5IbmVliNT5O19Mfuvna9LL7zlHyRfsSvBPZmF9tM=
 github.com/Showmax/go-fqdn v1.0.0/go.mod h1:SfrFBzmDCtCGrnHhoDjuvFnKsWjEQX/Q9ARZvOrJAko=
 github.com/StackExchange/wmi v0.0.0-20190523213315-cbe66965904d/go.mod h1:3eOhrUMpNV+6aFIbp5/iudMxNCF27Vw2OZgy4xEx0Fg=
+github.com/TIQQE/opentelemetry-collector-contrib/extension/oidcauthextension v0.0.0-20220920095720-0cc90b5594e4 h1:JAlj5LPy5sQWEilgD90MtqmX9NmdHBa7plTOCr0RfdE=
+github.com/TIQQE/opentelemetry-collector-contrib/extension/oidcauthextension v0.0.0-20220920095720-0cc90b5594e4/go.mod h1:cPb1+TTYmLQMHTUOvRUo67ABasYBeA13YBgyhnUFwow=
 github.com/VividCortex/gohistogram v1.0.0 h1:6+hBz+qvs0JOrrNhhmR7lFxo5sINxBCGXrdtl/UvroE=
 github.com/VividCortex/gohistogram v1.0.0/go.mod h1:Pf5mBqqDxYaXu3hDrrU+w6nw50o/4+TcAqDqk/vUH7g=
 github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc/go.mod h1:LOuyumcjzFXgccqObfd/Ljyb9UuFJ6TxHnclSeseNhc=
@@ -795,8 +797,6 @@ github.com/open-telemetry/opentelemetry-collector-contrib/extension/oauth2client
 github.com/open-telemetry/opentelemetry-collector-contrib/extension/oauth2clientauthextension v0.58.0/go.mod h1:jRUx1WWmfw2UH1D0BhkFYgeafmv9UYnm5pNMiRh0Hlo=
 github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/ecsobserver v0.58.0 h1:g9FQ7jBcX49orCa21KsE2h+pIdtBLT542Ho6Bh+3ljQ=
 github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/ecsobserver v0.58.0/go.mod h1:kywayLpIV1fQygur7REui/xngI9Me+Jmha1Arf7P/FA=
-github.com/open-telemetry/opentelemetry-collector-contrib/extension/oidcauthextension v0.58.0 h1:DJ6KHHv4C3KhN5WD3c/9SsWJSoANXxZasb3XH/3Fqww=
-github.com/open-telemetry/opentelemetry-collector-contrib/extension/oidcauthextension v0.58.0/go.mod h1:y1zzdxdI3YQyiNrTLKMwQb1fHZzw8D6ZlZZyGcwT0kA=
 github.com/open-telemetry/opentelemetry-collector-contrib/extension/pprofextension v0.58.0 h1:38u+hexsxfoQmJfJp60c4xqFJ/UR3rGpbaor7fxTvhU=
 github.com/open-telemetry/opentelemetry-collector-contrib/extension/pprofextension v0.58.0/go.mod h1:dHMGZ3+L0cPr3O72wYaxFiQwYpPeV4PRjPqwTbpSJS8=
 github.com/open-telemetry/opentelemetry-collector-contrib/extension/sigv4authextension v0.58.0 h1:eqB4w3VcDozHkgGC1BCj6QRdjnhePl3WTskOmMc/Fxs=

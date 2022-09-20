@@ -3,6 +3,7 @@ module github.com/aws-observability/aws-otel-collector
 go 1.18
 
 require (
+	github.com/TIQQE/opentelemetry-collector-contrib/extension/oidcauthextension v0.0.0-20220920095720-0cc90b5594e4
 	github.com/aws/aws-sdk-go v1.44.86
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsemfexporter v0.58.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsxrayexporter v0.58.0
@@ -16,6 +17,7 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter v0.58.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/extension/awsproxy v0.58.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckextension v0.58.0
+	github.com/open-telemetry/opentelemetry-collector-contrib/extension/oauth2clientauthextension v0.58.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/ecsobserver v0.58.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/extension/pprofextension v0.58.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/extension/sigv4authextension v0.58.0
@@ -203,8 +205,6 @@ require (
 	github.com/mrunalp/fileutils v0.5.0 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/extension/oauth2clientauthextension v0.58.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/extension/oidcauthextension v0.58.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/awsutil v0.58.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/containerinsight v0.58.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/cwlogs v0.58.0 // indirect
