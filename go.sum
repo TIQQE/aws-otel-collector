@@ -131,8 +131,8 @@ github.com/Shopify/toxiproxy/v2 v2.1.6-0.20210914104332-15ea381dcdae/go.mod h1:/
 github.com/Showmax/go-fqdn v1.0.0 h1:0rG5IbmVliNT5O19Mfuvna9LL7zlHyRfsSvBPZmF9tM=
 github.com/Showmax/go-fqdn v1.0.0/go.mod h1:SfrFBzmDCtCGrnHhoDjuvFnKsWjEQX/Q9ARZvOrJAko=
 github.com/StackExchange/wmi v0.0.0-20190523213315-cbe66965904d/go.mod h1:3eOhrUMpNV+6aFIbp5/iudMxNCF27Vw2OZgy4xEx0Fg=
-github.com/TIQQE/opentelemetry-collector-contrib/extension/oidcauthextension v0.0.0-20220920095720-0cc90b5594e4 h1:JAlj5LPy5sQWEilgD90MtqmX9NmdHBa7plTOCr0RfdE=
-github.com/TIQQE/opentelemetry-collector-contrib/extension/oidcauthextension v0.0.0-20220920095720-0cc90b5594e4/go.mod h1:cPb1+TTYmLQMHTUOvRUo67ABasYBeA13YBgyhnUFwow=
+github.com/TIQQE/opentelemetry-collector-extensions/extension/oidcauthextension v0.0.0-20220921040845-afe4fd191053 h1:tN+VY5ShuaM1ue1n45m/mMwoptu9nO3DBdpJjCKfSGk=
+github.com/TIQQE/opentelemetry-collector-extensions/extension/oidcauthextension v0.0.0-20220921040845-afe4fd191053/go.mod h1:nhr2i4YnkEUoe8g2v8Rtdh6BOEoqVwDacWAawe7dea8=
 github.com/VividCortex/gohistogram v1.0.0 h1:6+hBz+qvs0JOrrNhhmR7lFxo5sINxBCGXrdtl/UvroE=
 github.com/VividCortex/gohistogram v1.0.0/go.mod h1:Pf5mBqqDxYaXu3hDrrU+w6nw50o/4+TcAqDqk/vUH7g=
 github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc/go.mod h1:LOuyumcjzFXgccqObfd/Ljyb9UuFJ6TxHnclSeseNhc=

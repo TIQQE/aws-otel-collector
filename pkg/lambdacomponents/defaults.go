@@ -16,7 +16,7 @@
 package lambdacomponents
 
 import (
-	"github.com/TIQQE/opentelemetry-collector-contrib/extension/oidcauthextension"
+	"github.com/TIQQE/opentelemetry-collector-extensions/extension/oidcauthextension"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsemfexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsxrayexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusexporter"
