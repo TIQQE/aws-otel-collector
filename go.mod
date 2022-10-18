@@ -4,6 +4,7 @@ go 1.18
 
 require (
 	github.com/TIQQE/opentelemetry-collector-extensions/extension/oidcauthextension v0.0.0-20220921040845-afe4fd191053
+	github.com/TIQQE/opentelemetry-collector-extensions/extension/opensearchexporter v0.0.0-20221018043319-79bbcbecb217
 	github.com/aws/aws-sdk-go v1.44.86
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsemfexporter v0.58.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsxrayexporter v0.58.0
@@ -115,6 +116,7 @@ require (
 	github.com/docker/go-units v0.4.0 // indirect
 	github.com/dustin/go-humanize v1.0.0 // indirect
 	github.com/dynatrace-oss/dynatrace-metric-utils-go v0.5.0 // indirect
+	github.com/elastic/go-structform v0.0.10 // indirect
 	github.com/emicklei/go-restful v2.9.5+incompatible // indirect
 	github.com/envoyproxy/go-control-plane v0.10.3 // indirect
 	github.com/envoyproxy/protoc-gen-validate v0.6.7 // indirect
@@ -235,6 +237,7 @@ require (
 	github.com/opencontainers/image-spec v1.0.2 // indirect
 	github.com/opencontainers/runtime-spec v1.0.3-0.20210326190908-1c3f411f0417 // indirect
 	github.com/opencontainers/selinux v1.10.0 // indirect
+	github.com/opensearch-project/opensearch-go v1.1.0 // indirect
 	github.com/openshift/api v0.0.0-20210521075222-e273a339932a // indirect
 	github.com/openshift/client-go v0.0.0-20210521082421-73d9475a9142 // indirect
 	github.com/opentracing/opentracing-go v1.2.0 // indirect

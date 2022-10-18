@@ -17,6 +17,7 @@ package defaultcomponents // import "aws-observability.io/collector/defaultcompo
 
 import (
 	"github.com/TIQQE/opentelemetry-collector-extensions/extension/oidcauthextension"
+	"github.com/TIQQE/opentelemetry-collector-extensions/extension/opensearchexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsemfexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsxrayexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter"
@@ -133,6 +134,7 @@ func Components() (component.Factories, error) {
 		loggingexporter.NewFactory(),
 		otlpexporter.NewFactory(),
 		otlphttpexporter.NewFactory(),
+		opensearchexporter.NewFactory(),
 	)
 
 	if err != nil {
