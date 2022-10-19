@@ -41,7 +41,13 @@ LDFLAGS=-ldflags "-s -w -X $(BUILD_INFO_IMPORT_PATH).GitHash=$(GIT_SHA) \
 
 GOOS=$(shell go env GOOS)
 GOARCH=$(shell go env GOARCH)
-DOCKER_NAMESPACE=mikedutuandu
+
+###dev repo
+DOCKER_NAMESPACE=public.ecr.aws/f5s9x0g9
+###test repo
+###prod repo
+
+
 COMPONENT=awscollector
 
 TOOLS_MOD_DIR := $(abspath ./tools/linters)
