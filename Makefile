@@ -137,11 +137,23 @@ package-deb: build
 
 .PHONY: docker-build
 docker-build: amd64-build
-	docker buildx build --platform linux/amd64 --build-arg BUILDMODE=copy --load -t $(DOCKER_NAMESPACE)/$(COMPONENT):$(VERSION) -f ./cmd/$(COMPONENT)/Dockerfile .
+	if [ ! $(certs-path) ]; then echo "Please input certs-path";exit 1; fi
+	if [ ! -d $(certs-path) ]; then echo "This folder is not exist: $(certs-path) ";exit 1; fi
+	if [ -e $(certs-path)/ca.pem ]; then echo "Check file ca.pem";else echo "ca.pem is not exist";exit 1; fi;
+	if [ -e $(certs-path)/collector.pem ]; then echo "Check file collector.pem";else echo "collector.pem is not exist";exit 1; fi;
+	if [ -e $(certs-path)/collector-key.pem ]; then echo "Check file collector-key.pem";else echo "collector-key.pem is not exist";exit 1; fi;
+	if [ -e $(certs-path)/collector-config.yaml ]; then echo "Check file collector-config.yaml";else echo "collector-config.yaml is not exist";exit 1; fi;
+
+	cp $(certs-path)/ca.pem ca.pem
+	cp $(certs-path)/collector.pem collector.pem
+	cp $(certs-path)/collector-key.pem collector-key.pem
+	cp $(certs-path)/collector-config.yaml collector-config.yaml
+
+	docker buildx build  --platform linux/amd64 --build-arg CACHEBUST=$(date +%s) --build-arg BUILDMODE=copy --load -t $(DOCKER_NAMESPACE)/$(COMPONENT):$(VERSION) -f ./cmd/$(COMPONENT)/Dockerfile .
 
 .PHONY: docker-build-arm
 docker-build-arm: arm64-build
-	docker buildx build --platform linux/arm64 --build-arg BUILDMODE=copy --load -t $(DOCKER_NAMESPACE)/$(COMPONENT):$(VERSION) -f ./cmd/$(COMPONENT)/Dockerfile .
+	docker buildx build --platform linux/arm64  --build-arg BUILDMODE=copy --load -t $(DOCKER_NAMESPACE)/$(COMPONENT):$(VERSION) -f ./cmd/$(COMPONENT)/Dockerfile .
 
 .PHONY: docker-push
 docker-push:

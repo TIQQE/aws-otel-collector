@@ -59,6 +59,12 @@ COPY build/linux/$TARGETARCH/aoc /workspace/awscollector
 FROM prep-${BUILDMODE} AS package
 
 COPY config.yaml /workspace/config/otel-config.yaml
+
+COPY collector-config.yaml /workspace/config/collector-config.yaml
+COPY collector.pem /workspace/config/collector.pem
+COPY collector-key.pem /workspace/config/collector-key.pem
+COPY ca.pem /workspace/config/ca.pem
+
 COPY config/ /workspace/config/
 
 ################################
@@ -75,5 +81,5 @@ ENV RUN_IN_CONTAINER="True"
 # aws-sdk-go needs $HOME to look up shared credentials
 ENV HOME=/root
 ENTRYPOINT ["/awscollector"]
-CMD ["--config=/etc/otel-config.yaml"]
+CMD ["--config=/etc/collector-config.yaml"]
 EXPOSE 4317 55681 2000
