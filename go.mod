@@ -3,7 +3,7 @@ module github.com/aws-observability/aws-otel-collector
 go 1.18
 
 require (
-	github.com/TIQQE/opentelemetry-collector-extensions/extension/oidcauthextension v0.0.0-20220921040845-afe4fd191053
+	github.com/TIQQE/opentelemetry-collector-extensions/extension/oidcauthextension v0.0.0-20221020101300-55f780ebe085
 	github.com/TIQQE/opentelemetry-collector-extensions/extension/opensearchexporter v0.0.0-20221018052335-7d6d39f626cf
 	github.com/aws/aws-sdk-go v1.44.86
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsemfexporter v0.58.0
