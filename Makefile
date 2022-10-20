@@ -43,8 +43,9 @@ GOOS=$(shell go env GOOS)
 GOARCH=$(shell go env GOARCH)
 
 ###dev repo
-DOCKER_NAMESPACE=public.ecr.aws/f5s9x0g9
+#DOCKER_NAMESPACE=public.ecr.aws/f5s9x0g9
 ###test repo
+DOCKER_NAMESPACE=240536350385.dkr.ecr.eu-north-1.amazonaws.com
 ###prod repo
 
 
@@ -95,7 +96,7 @@ dependabot-check: install-dbotconf
 
 .PHONY: dependabot-generate
 dependabot-generate: install-dbotconf
-	@$(DBOTCONF) generate > $(DEPENDABOT_CONFIG); 
+	@$(DBOTCONF) generate > $(DEPENDABOT_CONFIG);
 
 .PHONY: build
 build: install-tools lint multimod-verify
