@@ -42,11 +42,11 @@ LDFLAGS=-ldflags "-s -w -X $(BUILD_INFO_IMPORT_PATH).GitHash=$(GIT_SHA) \
 GOOS=$(shell go env GOOS)
 GOARCH=$(shell go env GOARCH)
 
-###dev repo
-#DOCKER_NAMESPACE=public.ecr.aws/f5s9x0g9
+
 ###test repo
 DOCKER_NAMESPACE=240536350385.dkr.ecr.eu-north-1.amazonaws.com
-###prod repo
+##prod repo
+#DOCKER_NAMESPACE=291960307719.dkr.ecr.eu-north-1.amazonaws.com
 
 
 COMPONENT=awscollector
