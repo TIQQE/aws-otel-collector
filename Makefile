@@ -152,6 +152,10 @@ docker-build: amd64-build
 
 	docker buildx build  --platform linux/amd64 --build-arg CACHEBUST=$(date +%s) --build-arg BUILDMODE=copy --load -t $(DOCKER_NAMESPACE)/$(COMPONENT):$(VERSION) -f ./cmd/$(COMPONENT)/Dockerfile .
 
+.PHONY: docker-build-default
+docker-build-default: amd64-build
+	docker buildx build --platform linux/amd64 --build-arg BUILDMODE=copy --load -t $(DOCKER_NAMESPACE)/$(COMPONENT):$(VERSION) -f ./cmd/$(COMPONENT)/Dockerfile.default .
+
 .PHONY: docker-build-arm
 docker-build-arm: arm64-build
 	docker buildx build --platform linux/arm64  --build-arg BUILDMODE=copy --load -t $(DOCKER_NAMESPACE)/$(COMPONENT):$(VERSION) -f ./cmd/$(COMPONENT)/Dockerfile .
