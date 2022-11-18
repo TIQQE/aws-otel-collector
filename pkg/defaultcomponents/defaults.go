@@ -16,6 +16,7 @@
 package defaultcomponents // import "aws-observability.io/collector/defaultcomponents
 
 import (
+	"github.com/TIQQE/opentelemetry-collector-extensions/extension/basicauthextension"
 	"github.com/TIQQE/opentelemetry-collector-extensions/extension/oidcauthextension"
 	"github.com/TIQQE/opentelemetry-collector-extensions/extension/opensearchexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsemfexporter"
@@ -78,6 +79,7 @@ func Components() (component.Factories, error) {
 		ballastextension.NewFactory(),
 		oidcauthextension.NewFactory(),
 		oauth2clientauthextension.NewFactory(),
+		basicauthextension.NewFactory(),
 	)
 
 	if err != nil {
