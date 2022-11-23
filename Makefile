@@ -44,7 +44,7 @@ GOARCH=$(shell go env GOARCH)
 
 
 ###test repo
-DOCKER_NAMESPACE=240536350385.dkr.ecr.eu-north-1.amazonaws.com
+DOCKER_NAMESPACE=536477288918.dkr.ecr.eu-north-1.amazonaws.com
 ##prod repo
 #DOCKER_NAMESPACE=291960307719.dkr.ecr.eu-north-1.amazonaws.com
 
