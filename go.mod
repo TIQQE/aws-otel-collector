@@ -77,7 +77,7 @@ require (
 	github.com/GoogleCloudPlatform/opentelemetry-operations-go/detectors/gcp v0.32.5 // indirect
 	github.com/Microsoft/go-winio v0.5.2 // indirect
 	github.com/Showmax/go-fqdn v1.0.0 // indirect
-	github.com/TIQQE/opentelemetry-collector-extensions/extension/basicauthextension v0.0.0-20221123163513-fe16e8390993 // indirect
+	github.com/TIQQE/opentelemetry-collector-extensions/extension/basicauthextension v0.0.0-20221125014053-43bf8bf77cb1 // indirect
 	github.com/VividCortex/gohistogram v1.0.0 // indirect
 	github.com/alecthomas/units v0.0.0-20211218093645-b94a6e3cc137 // indirect
 	github.com/andybalholm/brotli v1.0.4 // indirect
