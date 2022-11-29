@@ -19,6 +19,7 @@ import (
 	"github.com/TIQQE/opentelemetry-collector-extensions/extension/basicauthextension"
 	"github.com/TIQQE/opentelemetry-collector-extensions/extension/oidcauthextension"
 	"github.com/TIQQE/opentelemetry-collector-extensions/extension/opensearchexporter"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awscloudwatchlogsexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsemfexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsxrayexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter"
@@ -137,6 +138,7 @@ func Components() (component.Factories, error) {
 		otlpexporter.NewFactory(),
 		otlphttpexporter.NewFactory(),
 		opensearchexporter.NewFactory(),
+		awscloudwatchlogsexporter.NewFactory(),
 	)
 
 	if err != nil {

@@ -3,6 +3,7 @@ module github.com/aws-observability/aws-otel-collector
 go 1.18
 
 require (
+	github.com/TIQQE/opentelemetry-collector-extensions/extension/basicauthextension v0.0.0-20221129072532-6b102a3d6bb0
 	github.com/TIQQE/opentelemetry-collector-extensions/extension/oidcauthextension v0.0.0-20221020101300-55f780ebe085
 	github.com/TIQQE/opentelemetry-collector-extensions/extension/opensearchexporter v0.0.0-20221018052335-7d6d39f626cf
 	github.com/aws/aws-sdk-go v1.44.140
@@ -64,7 +65,6 @@ require (
 	github.com/Azure/go-autorest/autorest/validation v0.3.1 // indirect
 	github.com/Azure/go-autorest/logger v0.2.1 // indirect
 	github.com/Azure/go-autorest/tracing v0.6.0 // indirect
-	github.com/CodeCollaborate/Server v1.0.0-RC2 // indirect
 	github.com/DataDog/agent-payload/v5 v5.0.27 // indirect
 	github.com/DataDog/datadog-agent/pkg/obfuscate v0.38.0-rc.3.0.20220804102556-2fec6abdb5f7 // indirect
 	github.com/DataDog/datadog-agent/pkg/otlp/model v0.38.0-rc.3.0.20220804102556-2fec6abdb5f7 // indirect
@@ -77,10 +77,8 @@ require (
 	github.com/GoogleCloudPlatform/opentelemetry-operations-go/detectors/gcp v0.32.5 // indirect
 	github.com/Microsoft/go-winio v0.5.2 // indirect
 	github.com/Showmax/go-fqdn v1.0.0 // indirect
-	github.com/TIQQE/opentelemetry-collector-extensions/extension/basicauthextension v0.0.0-20221125014053-43bf8bf77cb1 // indirect
 	github.com/VividCortex/gohistogram v1.0.0 // indirect
 	github.com/alecthomas/units v0.0.0-20211218093645-b94a6e3cc137 // indirect
-	github.com/andybalholm/brotli v1.0.4 // indirect
 	github.com/antonmedv/expr v1.9.0 // indirect
 	github.com/apache/thrift v0.16.0 // indirect
 	github.com/armon/go-metrics v0.3.10 // indirect
@@ -95,7 +93,6 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/iot v1.31.0 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sso v1.4.2 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.7.2 // indirect
-	github.com/aws/aws-xray-sdk-go v1.8.0 // indirect
 	github.com/aws/smithy-go v1.13.4 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/blang/semver v3.5.1+incompatible // indirect
@@ -215,6 +212,7 @@ require (
 	github.com/mrunalp/fileutils v0.5.0 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f // indirect
+	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awscloudwatchlogsexporter v0.58.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/awsutil v0.58.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/containerinsight v0.58.0 // indirect
 	github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/cwlogs v0.58.0 // indirect
@@ -294,8 +292,6 @@ require (
 	github.com/tklauser/numcpus v0.4.0 // indirect
 	github.com/uber/jaeger-client-go v2.30.0+incompatible // indirect
 	github.com/uber/jaeger-lib v2.4.1+incompatible // indirect
-	github.com/valyala/bytebufferpool v1.0.0 // indirect
-	github.com/valyala/fasthttp v1.34.0 // indirect
 	github.com/vishvananda/netlink v1.1.1-0.20210330154013-f5de75959ad5 // indirect
 	github.com/vishvananda/netns v0.0.0-20210104183010-2eb08e3e575f // indirect
 	github.com/vultr/govultr/v2 v2.17.2 // indirect
