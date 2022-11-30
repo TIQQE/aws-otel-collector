@@ -153,7 +153,7 @@ docker-build: amd64-build
 	docker buildx build  --platform linux/amd64 --build-arg CACHEBUST=$(date +%s) --build-arg BUILDMODE=copy --load -t $(DOCKER_NAMESPACE)/$(COMPONENT):$(VERSION) -f ./cmd/$(COMPONENT)/Dockerfile .
 
 .PHONY: docker-build-withconfig
-docker-build: amd64-build
+docker-build-withconfig: amd64-build
 	if [ ! $(certs-path) ]; then echo "Please input certs-path";exit 1; fi
 	if [ ! -d $(certs-path) ]; then echo "This folder is not exist: $(certs-path) ";exit 1; fi
 	if [ -e $(certs-path)/collector-config.yaml ]; then echo "Check file collector-config.yaml";else echo "collector-config.yaml is not exist";exit 1; fi;
